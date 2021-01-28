@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RequestsComponent } from './requests/requests.component';
 
 
 
@@ -18,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    routingComponents
+    routingComponents,
+    RequestsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
