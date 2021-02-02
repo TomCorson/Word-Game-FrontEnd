@@ -13,9 +13,9 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.http.get<any>('https://localhost:8080').subscribe(data => {
-      this.totalAngularPackages = data.total;
+    this.http.get<any>('http://localhost:8080').subscribe(data => {
+      this.totalAngularPackages = data;
     })
-    console.log(this.totalAngularPackages);
   }
+
 }
