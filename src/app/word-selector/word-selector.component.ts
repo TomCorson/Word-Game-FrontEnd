@@ -9,7 +9,7 @@ import {MadLib} from './mad-lib';
   styleUrls: ['./word-selector.component.css']
 })
 export class WordSelectorComponent implements OnInit {
-  MadLibList = [];
+  MadLibList : MadLib[] = [];
 
   constructor(private configService: ConfigService) { }
 
