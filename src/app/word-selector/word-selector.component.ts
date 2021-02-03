@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import {ConfigService} from '../config.service';
-import {MadLib} from './mad-lib';
+import {MadLib} from './word-input/mad-lib';
 
 @Component({
   selector: 'app-word-selector',
