@@ -2,7 +2,11 @@
   <H2> Be creative! Be unique! Be yourself!</H2>
   <h4 id="how-to">    To play this game, simply fill out the boxes below with your creative and silly words!<br>
     Once you are done press submit and your words will fill in the blanks of a short story! </h4>
+<div>
+  <app-word-input *ngFor="let madlib of MadLibList" [madlib]="madlib">
+  </app-word-input>
 
+</div>
 
   <form>
   <div class="row">
