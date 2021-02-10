@@ -8,8 +8,10 @@ import { MadLib } from './mad-lib';
   styleUrls: ['./word-input.component.css']
 })
 export class WordInputComponent implements OnInit {
-  @Input() madlib: MadLib | undefined;
-  constructor() { }
+  @Input() madlib?: MadLib;
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
