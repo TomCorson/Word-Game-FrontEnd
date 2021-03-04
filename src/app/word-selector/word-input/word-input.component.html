@@ -1,9 +1,19 @@
-<div class="card">
-  <div class="col">
-    <p>trying to test</p>
-    <label for="partofSpeech">: </label>
-    <input id="partofSpeech" type="text" class="form-control">
-
-  </div>
+<div class="container">
+  <table class="table table-striped">
+    <thread>
+      <tr>
+      <th>Madlib Name</th>
+      <th>Madlib story</th>
+      <th>Madlib parts of speech</th>
+      </tr>
+    </thread>
+    <tbody>
+    <tr *ngFor="let madlib of madlibs">
+      <td>{{ madlib.name }}</td>
+      <td>{{ madlib.story }}</td>
+      <td>{{ madlib.partsOfSpeech }}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 
